@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title{
+            background-color: green;
+            text-align: center;
+            color: blue;
+            padding: 2rem;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding-left: 1.2rem;
+            }
+        /*
+        inherit
+        자신을 감싸고있는 tag에 적용된 style을 상속받아서 적용하라
+        */
+        a{
+            color: inherit;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+              }    
+        address{
+            text-align: center;
+        }
+        /*
+        selector를 컴마( ,)로 여러개 지정하면 공통된 속성을 함께 지정할 수 있다
+         */
+        #ar1, #ar2, #ar3, .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        /* box크기를 원래크기(자신을 감싸는 어떤 것)의 50%만큼 설정하라 */
+        #ar2{
+            width: 50%;
+        }
+        /* 
+        margin:0 auto;
+            margin 값에 top과 bottom을 임의 값으로 설정하고
+            left와 right는 자동설정하므로해서
+            box를 가운데 정렬하는 효과를 낸다 */
+        #ar3{
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="title">Layout연습</h3>
+    </header>
+    <nav>
+        <a href="https://naver.com">네이버</a>&nbsp;&nbsp;
+        <a href="https://google.com">구글</a>&nbsp;&nbsp;
+        <a href="https://daum.net">다음</a>&nbsp;&nbsp;
+    </nav>
+    <section>
+        <article id="ar1" class="arclass">
+                모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 이 헌법에 의한 최초의 대통령의 임기는 이 헌법시행일로부터 개시한다. 대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 대한민국은 통일을 지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고 이를 추진한다.
+        </article>
+        <article id="ar2" class="arclass">
+                대통령은 법률안의 일부에 대하여 또는 법률안을 수정하여 재의를 요구할 수 없다. 국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다. 국무위원은 국무총리의 제청으로 대통령이 임명한다. 국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 모든 국민은 거주·이전의 자유를 가진다. 모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.
+        </article>
+        <article id="ar3" class="arclass">
+                대통령이 궐위되거나 사고로 인하여 직무를 수행할 수 없을 때에는 국무총리, 법률이 정한 국무위원의 순서로 그 권한을 대행한다. 모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 국가안전보장회의는 대통령이 주재한다. 모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다. 대법원은 법률에 저촉되지 아니하는 범위안에서 소송에 관한 절차, 법원의 내부규율과 사무처리에 관한 규칙을 제정할 수 있다. 근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다.
+        </article>
+    </section>
+    <footer>
+        <address>CopytRight &copy; rewit@naver.com</address>
+    </footer>
+    
+</body>
+</html>

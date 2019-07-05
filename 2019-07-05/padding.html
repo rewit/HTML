@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title {
+            background-color: green;
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        #k1{
+            background-color: yellow;
+            padding-left: 20px;
+            padding-top: 50px;
+            padding-right: 100px;
+            padding-bottom: 200px;
+        }
+        /* 
+            4방향의 마진을 별도로 지정할때
+            값을 동시에 지정하는 방법
+            Top을 시작으로 시계방향으로 
+            Top,Right,Bottom,Left 순으로 지정  */
+        #k2{
+            background-color: red;
+            padding: 30px 20px 100px 50px;
+        }
+        /*
+        margin을 2개만 지정할 때
+        Top 과 Bottom , Left와 Right */
+        #k3{
+            background-color: blue;
+            padding: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="title">마진</h3>
+    </header>
+        <p id="k1">우리나라</p>
+        <p id="k2">대한민국</p>
+        <p id="k3">Korea</p>
+    
+</body>
+</html>
