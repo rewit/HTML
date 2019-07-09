@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        section.main {
+            display: flex;
+            flex-flow: wrap; /* 화면이 작아지면 줄바꿈 */
+
+        }
+
+        section.main article {
+            background-color: #eee;
+            flex: 600px; /* flex : 1 1 600px;와 같음 */
+        }
+
+        section.main nav {
+            background-color: #ddd;
+            min-height: 50px;
+            flex: 150px;
+            order: -1;
+            line-height: 2em;
+            padding: 0;
+        }
+
+        section.main aside {
+            background-color: #ccf;
+            min-height: 50px;
+            flex: 150px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            border-bottom: tomato 1px solid;
+        }
+
+        ul a {
+            display: block;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        ul a:hover {
+            background-color: green;
+            color: white;
+        }
+
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제목</h1>
+    </header>
+    <section class="main">
+        <article>
+                <h4>대한민국</h4>
+                법률안에 이의가 있을 때에는 대통령은 제1항의 기간내에 이의서를 붙여 국회로 환부하고, 그 재의를 요구할 수 있다. 국회의 폐회중에도 또한 같다. 형사피해자는 법률이 정하는 바에 의하여 당해
+                사건의 재판절차에서 진술할 수 있다. 한 회계연도를 넘어 계속하여 지출할 필요가 있을 때에는 정부는 연한을 정하여 계속비로서 국회의 의결을 얻어야 한다. 대한민국의 국민이 되는 요건은 법률로
+                정한다. 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야
+                하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다.
+        </article>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+        <aside>
+            Aside
+        </aside>
+    </section>
+    <footer>
+        Footer
+    </footer>
+    
+</body>
+</html>
