@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>게시판 목록</title>
+
+<style>
+
+.bbs{
+	border: 2;
+	border-color: greenyellow;
+}
+tbody tr:nth-child(even){
+	background-color: wheat;
+}
+tbody tr:nth-child(odd){
+	background-color: papayawhip;
+}
+
+
+.t_menu{
+	background-color: gainsboro;
+	padding: 5px;
+}
+.t_name{
+	text-align: center;
+}
+</style>
+
+<script type="text/javascript">
+	function move(url){
+		location.href=url;
+	}
+</script>
+</head>
+
+<body>
+
+	<table class="bbs" width="1200" height="200" border="1">
+		<colgroup>
+			<col width="40" />
+			<col width="800" />
+			<col width="80" />
+			<col width="40" />
+			<col width="50" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="t_menu">No</th>
+				<th class="t_menu">제 목</th>
+				<th class="t_menu">작성자</th>
+				<th class="t_menu">작성일</th>
+				<th class="t_menu">조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="t_name">3</td>
+				<td><a href="Board_View.html">여기 추천합니다</a></td>
+				<td class="t_name">rewit</td>
+				<td class="t_name">2019/07/10</td>
+				<td class="t_name">98</td>
+			</tr>
+			<tr>
+				<td class="t_name">2</td>
+				<td><a href="Board_View.html">여기도 괜찮네요</a></td>
+				<td class="t_name">rlawlgnd</td>
+				<td class="t_name">2019/07/09</td>
+				<td class="t_name">34</td>
+			</tr>
+			<tr>
+				<td class="t_name">1</td>
+				<td><a href="Board_View.html">여기 추천해봐요</a></td>
+				<td class="t_name">rqigdp</td>
+				<td class="t_name">2019/07/05</td>
+				<td class="t_name">52</td>
+			</tr>
+		</tbody>
+	</table>
+		<input type="button" value="처음으로" onclick="move('Board_List.html');" />
+		<input type="button" value="글쓰기" onclick="move('Board_Write.html');" />
+
+</body>
+</html>
