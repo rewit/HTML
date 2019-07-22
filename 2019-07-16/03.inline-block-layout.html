@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    /*
+    inline-block으로 가로배치 box 리스트 설정
+        1.모든 box들에 display 속성을 inline-block으로 설정
+        2.vertical-align:top으로 설정하고 layout을 배치
+        3.inline-block으로 배치할 칼럼box들은 tag를 빈칸 enter로
+            분리하지 않아야 한다
+            
+    */
+    nav {
+        display: inline-block;
+        width: 25%;
+        margin: 0;
+        border: 1px solid red;
+        vertical-align: top;
+    }
+
+    .i-box {
+        display: inline-block;
+        border: 1px solid blue;
+        width: 70%;
+        margin: 0;
+        vertical-align: top;
+    }
+    .box{
+        border: 1px solid red;
+        margin-bottom: 10px;
+        
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>메뉴 1</li>
+            <li>메뉴 2</li>
+            <li>메뉴 3</li>
+            <li>메뉴 4</li>
+            <li>메뉴 5</li>
+        </ul>
+    </nav>
+    <div class="i-box">
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cupiditate tempora non
+            temporibus vero sunt earum nihil, molestias nulla voluptas neque labore, minima adipisci necessitatibus vel
+            nisi inventore laboriosam dolorum!
+            Laudantium ex assumenda dolore deserunt reiciendis fugiat perspiciatis quibusdam libero fuga, laboriosam
+            similique optio porro eaque pariatur commodi! Iure minima sequi illo esse quaerat repellendus ipsa excepturi
+            voluptatibus aliquid beatae!
+            Incidunt, ullam illo eum quis dolor nostrum numquam alias commodi deleniti quae perferendis asperiores
+            consectetur unde! Facere culpa ab quos fugit odit, itaque, quisquam voluptates ullam earum aut corporis
+            illum?
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, mollitia voluptates quam deserunt ullam
+            eligendi sunt et cumque eveniet sapiente molestias dolor iure vitae? Ea nostrum laboriosam voluptate dolorum
+            totam!
+        </div>
+    </div>
+</body>
+
+</html>

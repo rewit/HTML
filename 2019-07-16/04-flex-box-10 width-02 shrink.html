@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    .container{
+        display: flex;
+        height: 150px;
+        width: 80%;
+        background-color: green;
+        margin-bottom: 20px;
+    }
+    .item,.item5{
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 40px;
+        flex-basis: 120px;
+    }
+
+    .item:nth-child(1){background-color: #ffc447;}
+    .item:nth-child(2){background-color: #e87635;}
+    .item:nth-child(3){background-color: #ff4847;}
+    .item:nth-child(4){background-color: #d335e8;}
+    .item:nth-child(5){background-color: blue;}
+
+    /*
+       flex-shrink
+
+       container 크기가 작아질때 item의 크기를 어떻게 할 것인가
+       0: 그대로 유지
+       1~ : 비율에 따라 변동
+        단, 최소 크기는 원래보다 작지 않게
+        크기가 커질때는 basis로 지정된 크기까지만 증가
+    */
+    .container1 .item:nth-child(1){flex-shrink: 1;}
+    .container1 .item:nth-child(2){flex-shrink: 2;}
+    .container1 .item:nth-child(3){flex-shrink: 0;}
+    .container1 .item:nth-child(4){flex-shrink: 0;}
+    .container1 .item:nth-child(5){flex-shrink: 0;}
+
+    .container2 .item:nth-child(1){flex-shrink: 1;}
+    .container2 .item:nth-child(2){flex-shrink: 3;}
+    .container2 .item:nth-child(3){flex-shrink: 2;}
+    .container2 .item:nth-child(4){flex-shrink: 1;}
+    .container2 .item:nth-child(5){flex-shrink: 1;}
+
+    .item5{
+        flex: 1,0,auto; /* grow=1,shrink=0,basis=auto */
+        /* W3C (인터넷 표준 유형)에서 권고하는 방식*/
+        flex-grow: 1; /*축소 방법*/
+        flex-shrink: 0;/*확대 방법*/
+        flex-basis: auto;/*초기값*/
+
+        flex-grow: 1; /*축소 방법*/
+        flex-shrink: 1;/*확대 방법*/
+        flex-basis: 150px;/*초기값*/
+
+        background-color: royalblue;
+        
+        }
+</style>
+<body>
+    <div class="container container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item5">6</div>
+    </div>
+    
+</body>
+</html>
